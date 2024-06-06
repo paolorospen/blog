@@ -1,8 +1,7 @@
 import Image from "next/image";
 
 const contentfulLoader = ({ src, width, quality }) => {
-  // return `${src}?w=${width}&q=${quality || 75}`;
-  return `${src}?w=${width}`;
+  return `${src}?w=${width}&q=${quality || 75}`;
 };
 
 const Contentfulimage = (props) => {

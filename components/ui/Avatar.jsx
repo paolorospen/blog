@@ -1,4 +1,4 @@
-import Contentfulimage from "@/components/ui/Contentfulimage";
+import Contentfulimage from "@/components/ui/Contentfulimage.jsx";
 
 const Avatar = ({ name, picture }) => {
   return (

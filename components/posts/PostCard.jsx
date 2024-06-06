@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Avatar from "@/components/ui/Avatar";
 import DateComponent from "@/components/ui/DateComponent";
-import Contentfulimage from "@/components/ui/Contentfulimage";
+import Contentfulimage from "@/components/ui/Contentfulimage.jsx";
 
 const PostCard = ({ post }) => {
   const { title, slug, excerpt, coverImage, author, date } = post.fields;
