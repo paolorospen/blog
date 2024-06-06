@@ -1,5 +1,5 @@
 import Avatar from "@/components/ui/Avatar";
-import Contentfulimage from "@/components/ui/Contentfulimage";
+import ContentfulImage from "@/components/ui/ContentfulImage";
 import DateComponent from "@/components/ui/DateComponent";
 //try
 
@@ -14,7 +14,7 @@ const PostHeader = ({ post }) => {
         <DateComponent dateString={date} className="text-sm text-gray-400" />
       </div>
       <div className="mb-8 md:mb-16 sm:mx-0">
-        <Contentfulimage
+        <ContentfulImage
           alt={`Cover Image for ${title}`}
           src={coverImage.fields.file.url}
           width={coverImage.fields.file.details.image.width}
