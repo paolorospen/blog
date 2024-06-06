@@ -1,5 +1,5 @@
 import Avatar from "@/components/ui/Avatar";
-import ContentfulImage from "@/components/ui/ContentfulImage";
+import ContentfulImage from "../ui/ContentfulImage";
 import DateComponent from "@/components/ui/DateComponent";
 //try
 
