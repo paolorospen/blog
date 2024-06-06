@@ -1,7 +1,7 @@
 import { BLOCKS, INLINES, MARKS } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Link from "next/link";
-import ContentfulImage from "@/components/ui/ContentfulImage";
+import Contentfulimage from "@/components/ui/Contentfulimage";
 
 const options = {
   renderMark: {
@@ -67,7 +67,7 @@ const options = {
 
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       return (
-        <ContentfulImage
+        <Contentfulimage
           src={node.data.target.fields.file.url}
           height={node.data.target.fields.file.details.image.height}
           width={node.data.target.fields.file.details.image.width}

@@ -1,10 +1,10 @@
-import ContentfulImage from "@/components/ui/ContentfulImage";
+import Contentfulimage from "@/components/ui/Contentfulimage";
 
 const Avatar = ({ name, picture }) => {
   return (
     <div className="flex items-center">
       <div className="relative w-10 h-10 mr-4">
-        <ContentfulImage
+        <Contentfulimage
           alt={name}
           src={picture.fields.file.url}
           layout="fill"
