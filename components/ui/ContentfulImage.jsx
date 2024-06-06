@@ -1,10 +1,9 @@
-import Image from "next/image";
-
-const contentfulLoader = ({ src, width, quality }) => {
-  return `${src}?w=${width}&q=${quality || 75}`;
+import { formatDate } from "@/lib/utils";
+const DateComponent = ({ dateString, options, ...rest }) => {
+  return (
+    <time dateTime={dateString} {...rest}>
+      {formatDate(dateString, options)}
+    </time>
+  );
 };
-
-const ContentfulImage = (props) => {
-  return <Image loader={contentfulLoader} {...props} />;
-};
-export default ContentfulImage;
+export default DateComponent;
