@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Avatar from "@/components/ui/Avatar";
 import DateComponent from "@/components/ui/DateComponent";
-import Picchio from "@/components/ui/Picchio";
+import ContentfulImage from "@/components/ui/ContentfulImage";
 
 const PostCard = ({ post }) => {
   const { title, slug, excerpt, coverImage, author, date } = post.fields;
@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
     <li className="rounded-md overflow-hidden shadow-md">
       <Link href={`/posts/${slug}`} aria-label={title}>
         <div className="mb-2">
-          <Picchio
+          <ContentfulImage
             alt={`Cover Image for ${title}`}
             src={coverImage.fields.file.url}
             width={coverImage.fields.file.details.image.width}
