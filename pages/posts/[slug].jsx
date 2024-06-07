@@ -49,8 +49,8 @@ export const getStaticProps = async ({ params, preview = false }) => {
       preview,
       post: response?.items?.[0],
       preview,
-      revalidate: 60,
     },
+    revalidate: 60,
   };
 };
 
